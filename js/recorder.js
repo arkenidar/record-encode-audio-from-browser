@@ -140,7 +140,8 @@
 
       console.log("the blob " + blob + " " + blob.size + " " + blob.type);
 
-      var url = URL.createObjectURL(blob);
+      //var url = URL.createObjectURL(blob;)
+      var url = "data:audio/wav;base64,"+btoa(blob.string);
       var li = document.createElement('li');
       var hf = document.createElement('a');
       hf.href = url;
